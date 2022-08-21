@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Crypto Tracker</title>
+</head>
+<body style="background-color: #14213d;">
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <h1 class="col-md-7 text-center text-white">Crypto Tracker</h1>
+            <div class="col-md-6 row justify-content-center bg-warning mt-4 rounded-4">
+                <div class="col-10">
+                    <form action="" id = "searchForm">
+                        <div class="form-row">
+                            <div class="col-12 form-group">
+                                <label for="coin" class="mt-4 mb-2"><b>Coin Type</b></label>
+                                <select name="coinType" id="coin" class="form-control mb-2">
+                                    <option value="bitcoin">Bitcoin</option>
+                                    <option value="ethereum">Ethereum</option>
+                                    <option value="dogecoin">Dogecoin</option>
+                                    <option value="binance">Binance</option>
+                                    <option value="polkadot">Polkadot</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type = "submit" class="col-12 btn btn-primary mb-4">Get Price</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-7 text-center row justify-content-center">
+                <table class="col-md-7 m-5 rounded-4" border="1px" id="tableResult" style="background-color: white; font-weight: 700;">
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
